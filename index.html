@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>NC Desarrollador Web</title>
+</head>
+
+ 
+<body>
+    <!-- SECCION I N I C I O -->
+   
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>NC</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">ESTUDIOS</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="redes">
+                        
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Nicolas Castro</span>, Desarrollador Web</h2>
+                <p class="descripcion">Full Stack Developer | HTML, CSS, SASS, Javascript, Vue.js, Node.js, Express, MongoDB, Git, Scrum. </p>
+                <a href="#portfolio">Ir a Portafolio</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/20211219_171915.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, Soy <span>Nicolas Castro</span> </h2>
+            <h3>Desarrollador Web</h3>
+            <p>Bienvenidos mi nombre es Nicolas. Me considero un programador junior, con alta capacidad de aprendizaje y buenas relaciones interpersonales y trabajo en equipo, busco el crecimiento tanto personal como profesionalmente. Cursando actualmente desarrollo Full Stack Developer.</p>
+            <p>Mi objetivo a nivel personal es poder seguir creciendo y desarrollarme profesionalmente en el mundo IT.</p>
+            <a href="docs/Currículum Corporativo Minimalista Azul marino (1).pdf" download="CV PDF" target="_blank">Descargar CV</a>
+        </div>
+    </section>
+
+    <!-- SECCION E S T U D I O S -->
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS ESTUDIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"> <i class="fa-solid fa-code"></i></span>
+                <h4>Fundacion empujar</h4>
+                <h5>Bootcamp Full Stack</h5>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>JS</li>
+                    <li>Node & Express</li>
+                    <li>vue.js</li>
+                </ul>
+                <p> - Simulacros de Proyectos reales con grupos de trabajos dinamicos</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-file-code"></i></span>
+                <h4>Educacion IT</h4>
+                <h5>Bootcamp Full Stack</h5>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>JS</li>
+                    <li>HTML & CSS</li>
+                    <li>Express</li>
+                </ul>
+                <p>Resolucion de problemas y trabajos en grupos dinamicos con alta complejidad </p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-arrow-trend-up"></i></span>
+                <h4>U.T.N  B.S</h4>
+                <h5>Programador Web Inicial</h5>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>PHP</li>
+                    <li>HTML & CSS</li>
+                    <li>MySQL</li>
+                </ul>
+                <p>Resolucion de problemas y practicas constantes con un mentor a cargo</p>
+            </div>
+        </div>
+       
+        </div>
+    </section>
+
+    <!-- SECCION H A B I L I D A D E S -->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES </h3>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Html & Css</p>
+                <span class="porcentaje">70%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="html"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Sass</p>
+                <span class="porcentaje">70%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="sass"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Javascript</p>
+                <span class="porcentaje">60%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="js"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Vue.js</p>
+                <span class="porcentaje">35%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="vue"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Git</p>
+                <span class="porcentaje">65%</span>
+            </div>
+    
+            <div class="barra">
+                <div class="" id="git"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Node.Js</p>
+                <span class="porcentaje">50%</span>
+            </div>
+    
+            <div class="barra">
+                <div class="" id="node"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Express.Js</p>
+                <span class="porcentaje">50%</span>
+            </div>
+    
+            <div class="barra">
+                <div class="" id="express"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>MongoDB</p>
+                <span class="porcentaje">45%</span>
+            </div>
+    
+            <div class="barra">
+                <div class="" id="mongo"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Scrum</p>
+                <span class="porcentaje">70%</span>
+            </div>
+    
+            <div class="barra">
+                <div class="" id="scrum"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>PHP</p>
+                <span class="porcentaje">30%</span>
+            </div>
+    
+            <div class="barra">
+                <div class="" id="php"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>MySQL</p>
+                <span class="porcentaje">25%</span>
+            </div>
+    
+            <div class="barra">
+                <div class="" id="mysql"></div>
+            </div>
+        </div>
+    </div>
+
+   
+    
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://foroback.herokuapp.com/" target="_blank"><img src="img/Captura.PNG" alt=""></a>
+                <div class="info">
+                    <h4>Proyecto Foro de Video Juegos</h4>
+                    <p>Proyecto Full Stack</p>
+                </div>
+            </div>
+           
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://proyectocartarestauranteempujar.netlify.app" target="_blank"><img src="img/Captura3.PNG" alt=""></a>
+                <div class="info">
+                    <h4>Proyecto Carta de Restaurante</h4>
+                    <p>Proyecto Front End</p>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://ecommercenicolascastro00.herokuapp.com/" target="_blank"><img src="img/Captura2.PNG" alt=""></a>
+                <div class="info">
+                    <h4>Proyecto Ecommerce</h4>
+                    <p>Proyecto Full Stack</p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="fila">
+            
+           
+           
+        </div>
+    </section>
+
+    <!-- SECCTION C O N T A C T O -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactame ahora</h3>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/nc2000/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/nicolascastrocai" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/nicolascastrocai/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=5491136791485&text=Hola Nicolas te escribo porque me quiero poner en contacto con vos" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>Todos los derechos reservados - 2022</p>
+        
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
