@@ -148,13 +148,12 @@ html {
 #sobremi .contenedor-foto {
     max-width: 500px;
     margin-right: 80px;
-    background-color:#ff5080 ;
+    
 }
 
 #sobremi .contenedor-foto img {
-    padding: 20px;
-    height: 110%;
-    width: 140%;
+    padding: 5px;
+    width: 120%;
     border-radius: 20px;
     background-color:#ff5080 ;
 }
@@ -601,7 +600,7 @@ html {
     margin: 50px;
     font-size: 150px;
     width: 200px;
-    background-color: #ff5080;
+    
     
 }
 
@@ -611,18 +610,7 @@ html {
     color: black;
 }
 
-#contacto .btn-enviar {
-    display: block;
-    margin: auto;
-    cursor: pointer;
-    transition: .5s;
-    padding: 10px 15px !important;
-}
 
-#contacto .btn-enviar:hover {
-    background-color: #ff5080;
-    color: #fff;
-}
 /* *********************/
 /* seccion F O O T E R */
 /* *********************/
