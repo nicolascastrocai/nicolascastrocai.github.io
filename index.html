@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="node_modules/eins-modal/dist/css/eins-modal.min.css">
     <link rel="stylesheet" href="css/estilos.css">
     <title>NC Desarrollador Web</title>
 </head>
@@ -25,6 +26,7 @@
                             <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
                             <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
                             <li><a href="#servicios" onclick="seleccionar(this)">ESTUDIOS</a></li>
+                            <li><a href="#skills" onclick="seleccionar(this)">SKILLS</a></li>
                             <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
                             <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
                         </ul>
@@ -61,47 +63,99 @@
             <a href="docs/Currículum Corporativo Minimalista Azul marino.pdf" download="CV PDF" target="_blank">Descargar CV</a>
         </div>
     </section>
+    
+    
 
     <!-- SECCION E S T U D I O S -->
     <section id="servicios">
         <h3 class="titulo-seccion">MIS ESTUDIOS</h3>
         <div class="fila">
             <div class="servicio">
-                <span class="icono"> <i class="fa-solid fa-code"></i></span>
-                <h4>Fundacion empujar</h4>
-                <h5>Bootcamp Full Stack</h5>
-                <hr>
-                <ul class="servicios-tag">
-                    <li>JS</li>
-                    <li>Node & Express</li>
-                    <li>vue.js</li>
-                </ul>
-                <p> - Simulacros de Proyectos reales con grupos de trabajos dinamicos</p>
+                <div class="front">
+                    <span class="icono"> <i class="fa-solid fa-code"></i></span>
+                    <h4>Fundacion empujar</h4>
+                    <h5>Bootcamp Full Stack</h5>
+                    <hr>
+                </div>
+                <div class="back">
+                    <h3 style="color:white ;">Tecnologías Aprendidas</h3>
+                    <hr>
+                    <ul>
+                        <li><img src="/img/html-icon.png" alt="" class="img-estudios"></li>
+                        <li><img src="/img/css-icon.png" alt="" class="img-estudios"></li>
+                        <li><img src="/img/js.png" alt="" class="img-estudios"></li>
+                        <li><img src="/img/nodejs.png" alt="" class="img-estudios"></li>
+                        <li><img src="/img/icons8-mongodb-48.png" alt="" class="img-estudios"></li>
+                        
+                    </ul>
+                    <h6 class="titulo-experiencia">Experiencia</h6>
+                    <p> - Simulacros de Proyectos reales con grupos de trabajos dinamicos</p>
+                    <p> - Practicas diaras de algoritmos</p>
+                    <h6>Titulo</h6>
+                    <ul class="servicios-tag">
+                        <a href="" style="text-decoration:none ;">En Curso</a>
+                    </ul>
+                    
+                </div>
+                
             </div>
+
             <div class="servicio">
-                <span class="icono"><i class="fa-solid fa-file-code"></i></span>
-                <h4>Educacion IT</h4>
-                <h5>Bootcamp Full Stack</h5>
-                <hr>
-                <ul class="servicios-tag">
-                    <li>JS</li>
-                    <li>HTML & CSS</li>
-                    <li>Express</li>
-                </ul>
-                <p>Resolucion de problemas y trabajos en grupos dinamicos con alta complejidad </p>
+                <div class="front">
+                    <span class="icono"> <i class="fa-solid fa-code"></i></span>
+                    <h4>Educacion IT</h4>
+                    <h5>Bootcamp Full Stack</h5>
+                    <hr>
+                </div>
+                <div class="back">
+                    <h3 style="color:white ;">Tecnologías Aprendidas</h3>
+                    <hr>
+                    <ul>
+                        <li><img src="/img/html-icon.png" alt="" class="img-estudios"></li>
+                        <li><img src="/img/sass.png" alt="" class="img-estudios"></li>
+                        <li><img src="/img/js.png" alt="" class="img-estudios"></li>
+                        <li><img src="/img/nodejs.png" alt="" class="img-estudios"></li>
+                        <li><img src="/img/icons8-mongodb-48.png" alt="" class="img-estudios"></li>
+                        
+                    </ul>
+                    <h6 class="titulo-experiencia">Experiencia</h6>
+                    <p> - Trabajos y problemas dinamicos con diferentes grupos de trabajo</p>
+                    <p> - Resolucion de problemas de alta dificultad y buenas practicas del codigo  </p>
+                    <h6>Titulo</h6>
+                    <ul class="servicios-tag">
+                        <a href="https://drive.google.com/file/d/1srPmQY00Od6-gt3dy40b9MLYnb-Vk6lb/view?usp=sharing" target="_blank" style="text-decoration:none ;">Ver Titulo</a>
+                    </ul>
+                    
+                </div>
+                
             </div>
+
             <div class="servicio">
-                <span class="icono"><i class="fa-solid fa-arrow-trend-up"></i></span>
-                <h4>U.T.N  B.S</h4>
-                <h5>Programador Web Inicial</h5>
-                <hr>
-                <ul class="servicios-tag">
-                    <li>PHP</li>
-                    <li>HTML & CSS</li>
-                    <li>MySQL</li>
-                </ul>
-                <p>Resolucion de problemas y practicas constantes con un mentor a cargo</p>
-            </div>
+                <div class="front">
+                    <span class="icono"> <i class="fa-solid fa-code"></i></span>
+                    <h4>U.T.N e-learning</h4>
+                    <h5>Programador Web Inicial</h5>
+                    <hr>
+                </div>
+                <div class="back">
+                    <h3 style="color:white ;">Tecnologías Aprendidas</h3>
+                    <hr>
+                    <ul>
+                        
+                        <li><img src="/img/js.png" alt="" class="img-estudios"></li>
+                        <li><img src="/img/php.png" alt="" class="img-estudios"></li>
+                        <li><img src="/img/mysql.png" alt="" class="img-estudios"></li>
+                        
+                    </ul>
+                    <h6 class="titulo-experiencia">Experiencia</h6>
+                    <p> - Resoluciones de trabajos individuales y en grupo con un mentor a cargo</p>
+                    <p> - Pruebas en tiempo real de algoritmos relacionados a las tecnologías vistas</p>
+                    <h6>Titulo</h6>
+                    <ul class="servicios-tag">
+                        <a href="https://drive.google.com/file/d/1a12nrZ1vymGhRdiQH8LkoFyU6CdG6GFs/view?usp=sharing" target="_blank" style="text-decoration:none ;">Ver Titulo</a>
+                    </ul>
+                    
+                </div>
         </div>
        
         </div>
@@ -162,22 +216,12 @@
         </div>
         <div class="skill">
             <div class="info">
-                <p> <span class="lista"> </span>Node.Js</p>
+                <p> <span class="lista"> </span>Node.Js & Express.Js</p>
                 <span class="porcentaje">50%</span>
             </div>
     
             <div class="barra">
                 <div class="" id="node"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="info">
-                <p> <span class="lista"> </span>Express.Js</p>
-                <span class="porcentaje">50%</span>
-            </div>
-    
-            <div class="barra">
-                <div class="" id="express"></div>
             </div>
         </div>
         <div class="skill">
@@ -226,63 +270,184 @@
     
 
     <!-- SECCION PORTAFOLIO -->
-    <section id="portfolio">
-        <h3 class="titulo-seccion">Mis Proyectos</h3>
-        <div class="fila">
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <a href="https://foroback.herokuapp.com/" target="_blank"><img src="img/Captura.PNG" alt=""></a>
-                <div class="info">
-                    <h4>Proyecto Foro de Video Juegos</h4>
-                    <p>Proyecto Full Stack</p>
-                </div>
-            </div>
-           
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <a href="https://proyectocartarestauranteempujar.netlify.app" target="_blank"><img src="img/Captura3.PNG" alt=""></a>
-                <div class="info">
-                    <h4>Proyecto Carta de Restaurante</h4>
-                    <p>Proyecto Front End</p>
-                </div>
-            </div>
+    
+<section class="briefcase" id="portfolio">
+       <div class="briefcase-section container">
+        <h2>Portfolio</h2>
+        <div class="briefcase-grid">
+            <div><a data-modal-id="pw-portafolio"><img src="/img/Captura.PNG" alt=""></a></div>
+            <div><a data-modal-id="pw-ropbodactav2"><img src="/img/Captura2.PNG" alt=""></a></div>
+            <div><a data-modal-id="pw-dacorp"><img src="/img/Captura3.PNG" alt=""></a></div>
+            
 
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <a href="https://ecommercenicolascastro00.herokuapp.com/" target="_blank"><img src="img/Captura2.PNG" alt=""></a>
-                <div class="info">
-                    <h4>Proyecto Ecommerce</h4>
-                    <p>Proyecto Full Stack</p>
-                </div>
-            </div>
-            
         </div>
-        <div class="fila">
-            
-           
-           
-        </div>
+       </div>
     </section>
+            
 
     <!-- SECCTION C O N T A C T O -->
-    <section id="contacto">
+    <section class="about" id="contacto">
         <h3 class="titulo-seccion">Contactame ahora</h3>
-        <div class="redes">
-            <a href="https://www.linkedin.com/in/nc2000/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/nicolascastrocai" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://api.whatsapp.com/send?phone=5491136791485&text=Hola Nicolas te escribo porque me quiero poner en contacto con vos" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <div class="about-flex container">
+            <div class="about-info">
+                <form class="form"
+                action="https://formspree.io/f/xeqdkklo"
+                method="POST"
+              >
+                <label>
+                  Tu Correo:
+                  <input type="email" name="email">
+                </label>
+                <label>
+                  Tu mensaje:
+                  <textarea name="message"></textarea>
+                </label>
+                
+                <button type="submit">Enviar</button>
+              </form>
+            </div>
+            <div class="social">
+                <a href="https://github.com/nicolascastrocai" target="_blank"><img src="./img/github.svg" alt=""></a>
+                <a href="https://www.linkedin.com/in/nc2000/"target="_blank"><img src="./img/linkedin.svg" alt=""></a>
+            </div>
         </div>
     </section>
 
     <!-- SECCION FOOTER -->
     <footer>
-        <p>Todos los derechos reservados - 2022</p>
-        
-
+        <hr style="margin:20px   ;">
+        <p>Todos los derechos reservados Nicolas Castro © - 2022</p>
     </footer>
 
+
+    <!-- SECCION INS-MODAL -->
+    
+    <div id="pw-portafolio" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+        <div class="eins-modal-content">
+            <div class="eins-modal-close"></div>
+                <div class="pw-content">
+                    <div class="eins-modal-preview">
+                        <img src="/img/Captura9.PNG" alt="">
+                        <img src="/img/Captura10.PNG" alt="">
+                        <img src="/img/Captura11.PNG" alt="">
+                    </div>
+                    <div class="eins-modal-text">
+                        <h2>Proyecto Foro de Video Juegos</h2>
+                        <h3>Proyeco Full Stack</h3>
+                        <p>
+                           Cree un foro de juegos con Html, css(Sass) y Javascrip del lado del
+                           front end y del lado del back use Node js con expres y Mongo db
+                        </p>
+                        <p>
+                            - Manejo de Passport para el login y el register <br>
+                            - Uso de Plantillas EJS <br>
+                            - Manejo de Node.js con Express.js <br>
+                            - Manejo de datos con MongoDB 
+                        </p>
+                        <div class="eins-modal-text-2">
+                            <span></span><a href="https://foroback.herokuapp.com/" target="_blank" style="text-decoration:none ;">Ir al proyecto</a>
+                        </div>
+                        <div class="eins-modal-text-3">
+                            <span style="color:white ;">Tecnologías Usadas:</span>
+                            <div class="eins-modal-tec">
+                                <img src="/img/html-icon.png" alt="">
+                                <img src="/img/sass.png" alt="">
+                                <img src="/img/js.png" alt="">
+                                <img src="/img/nodejs.png" alt="">
+                                <img src="/img/icons8-mongodb-48.png" alt="">
+                                <img src="/img/heroku.png" alt="">
+                                
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div id="pw-ropbodactav2" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+    <div class="eins-modal-content">
+        <div class="eins-modal-close"></div>
+            <div class="pw-content">
+                <div class="eins-modal-preview">
+                    <img src="/img/Captura6.PNG" alt="">
+                    <img src="/img/Captura7.PNG" alt="">
+                    <img src="/img/Captura8.PNG" alt="">
+                </div>
+                <div class="eins-modal-text">
+                    <h2>Proyecto Ecommerce</h2>
+                    <h3>Proyecto Full Stack</h3>
+                    <p>Cree un ecommerce usando Html, Css y javascrip vanila de la
+                        parte de front end y del lado del back node js con express y
+                        mongo db
+                    </p>
+
+                    <p>
+                        - Promesas y callbacks <br>
+                        - Manejo de crud: Get, Pos, Put y Delete <br>
+                        - Manejo de datos con Node.js y MongoDB
+                    </p>
+
+                    <div class="eins-modal-text-2">
+                        <span></span><a href="https://ecommercenicolascastro00.herokuapp.com/#inicio"target="_blank" style="text-decoration: none;">Ir al proyecto</a>
+                    </div>
+                    <div class="eins-modal-text-3">
+                        <span style="color:white ;">Tecnologías Usadas:</span>
+                        <div class="eins-modal-tec">
+                            <img src="/img/html-icon.png" alt="">
+                            <img src="/img/css-icon.png" alt="">
+                            <img src="/img/js.png" alt="">
+                            <img src="/img/nodejs.png" alt="">
+                            <img src="/img/icons8-mongodb-48.png" alt="">
+                            <img src="/img/heroku.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="pw-dacorp" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+    <div class="eins-modal-content">
+        <div class="eins-modal-close"></div>
+            <div class="pw-content">
+                <div class="eins-modal-preview">
+                    <img src="/img/Captura4.PNG" alt="">
+                    <img src="/img/Captura5.PNG" alt="">
+                    
+                </div>
+                <div class="eins-modal-text">
+                    <h2 class="eins-modal-textp1"> Proyect Carta Restaurante.   </h2>
+                    <h3>Proyecto FrontEnd</h3>
+                    <p>Es un simulacro de proyecto para un Restaurante donde hacemos una carta dinamica online para mostrar al publico</p>
+                    <p> -Uso de  Hipervinculos <br>-Position y  flex para el diseño <br>-Manjeo de GIT</p>
+                    <div class="eins-modal-text-2">
+                        <span style="color:white;"></span><a href="https://proyectocartarestauranteempujar.netlify.app"target="_blank" style="text-decoration:none ;">Ir al proyecto</a>
+                    </div>
+                    <div class="eins-modal-text-3">
+                        <span style="color:white ;">Tecnologías Usadas:</span>
+                        <div class="eins-modal-tec">
+                            <img src="/img/html-icon.png" alt="">
+                            <img src="/img/css-icon.png" alt="">
+                            <img src="/img/git-icon.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
     <script src="script.js"></script>
+    <script src="node_modules/eins-modal/dist/js/eins-modal.min.js"></script>
 
 </body>
 
+ <!-- <a href="https://www.linkedin.com/in/nc2000/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+<a href="https://github.com/nicolascastrocai" target="_blank"><i class="fa-brands fa-github"></i></a>
+<a href="https://api.whatsapp.com/send?phone=5491136791485&text=Hola Nicolas te escribo porque me quiero poner en contacto con vos" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+ -->
 </html>

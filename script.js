@@ -6,6 +6,7 @@ function seleccionar(link) {
     opciones[2].className = "";
     opciones[3].className = "";
     opciones[4].className = "";
+    opciones[5].className = "";
     link.className = "seleccionado";
 }
 
@@ -33,7 +34,6 @@ function efectoHabilidades() {
         document.getElementById("vue").classList.add("barra-progreso4");
         document.getElementById("git").classList.add("barra-progreso5");
         document.getElementById("node").classList.add("barra-progreso6");
-        document.getElementById("express").classList.add("barra-progreso7");
         document.getElementById("mongo").classList.add("barra-progreso8");
         document.getElementById("scrum").classList.add("barra-progreso9");
         document.getElementById("php").classList.add("barra-progreso10");
@@ -41,3 +41,7 @@ function efectoHabilidades() {
     }
 
 }
+
+
+
+
