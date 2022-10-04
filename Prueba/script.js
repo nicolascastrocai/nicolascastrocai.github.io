@@ -1,6 +1,14 @@
 //Funcion que me aplica el estilo a la opciÃ²n seleccionada y quita la previamente seleccionada
+let opciones = document.querySelectorAll('#links  a');
+console.log(opciones);
+opciones.forEach(element => {
+    element.addEventListener('click',function(){
+        seleccionar(element)
+    })
+});
+
 function seleccionar(link) {
-    var opciones = document.querySelectorAll('#links  a');
+    
     opciones[0].className = "";
     opciones[1].className = "";
     opciones[2].className = "";
@@ -11,8 +19,12 @@ function seleccionar(link) {
 }
 
 //funcion que muestra el menu responsive
+const icono= document.querySelector('#iconoResponsive')
+icono.addEventListener('click',function(){
+    responsiveMenu()
+})
 function responsiveMenu() {
-    var x = document.getElementById("nav");
+    let x = document.getElementById("nav");
     if (x.className === "") {
         x.className = "responsive";
     } else {
@@ -25,8 +37,8 @@ window.onscroll = function() { efectoHabilidades() };
 
 //funcion que aplica la animacion de la barra de habilidades
 function efectoHabilidades() {
-    var skills = document.getElementById("skills");
-    var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
+    let skills = document.getElementById("skills");
+    let distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
     if (distancia_skills >= 300) {
         document.getElementById("html").classList.add("barra-progreso1");
         document.getElementById("sass").classList.add("barra-progreso2");

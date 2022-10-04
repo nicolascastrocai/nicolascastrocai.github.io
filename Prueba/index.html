@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     
+
     <title>NC Desarrollador Web</title>
 </head>
 
@@ -21,16 +22,16 @@
                     <h1>NC</h1>
                     <nav id="nav" class="">
                         <ul id="links">
-                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
-                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
-                            <li><a href="#servicios" onclick="seleccionar(this)">ESTUDIOS</a></li>
-                            <li><a href="#skills" onclick="seleccionar(this)">SKILLS</a></li>
-                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
-                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                            <li><a href="#inicio" class="seleccionado" >INICIO</a></li>
+                            <li><a href="#sobremi" >SOBRE MI</a></li>
+                            <li><a href="#servicios" >ESTUDIOS</a></li>
+                            <li><a href="#skills" >SKILLS</a></li>
+                            <li><a href="#portfolio" >PORTFOLIO</a></li>
+                            <li><a href="#contacto" >CONTACTO</a></li>
                         </ul>
                     </nav>
-                    <div id="icono-nav" onclick="responsiveMenu()">
-                        <i class="fa-solid fa-bars"></i>
+                    <div id="icono-nav" >
+                        <i id="iconoResponsive" class="fa-solid fa-bars"></i>
                     </div>
                     <div class="redes">
                         
@@ -88,7 +89,7 @@
                     </ul>
                     <h6 class="titulo-experiencia">Experiencia</h6>
                     <p> - Simulacros de Proyectos reales con grupos de trabajos dinamicos</p>
-                    <p> - Practicas diaras de algoritmos</p>
+                    <p> - Practicas diaras de algoritmos y resoluciones en grupo</p>
                     <h6>Titulo</h6>
                     <ul class="servicios-tag">
                         <a href="" style="text-decoration:none ;">En Curso</a>
@@ -118,7 +119,7 @@
                     </ul>
                     <h6 class="titulo-experiencia">Experiencia</h6>
                     <p> - Trabajos y problemas dinamicos con diferentes grupos de trabajo</p>
-                    <p> - Resolucion de problemas de alta dificultad y buenas practicas del codigo  </p>
+                    <p> - Buenas practicas y Resolucion de problemas con referencia al codigo  </p>
                     <h6>Titulo</h6>
                     <ul class="servicios-tag">
                         <a href="https://drive.google.com/file/d/1srPmQY00Od6-gt3dy40b9MLYnb-Vk6lb/view?usp=sharing" target="_blank" style="text-decoration:none ;">Ver Titulo</a>
@@ -147,7 +148,7 @@
                     </ul>
                     <h6 class="titulo-experiencia">Experiencia</h6>
                     <p> - Resoluciones de trabajos individuales y en grupo con un mentor a cargo</p>
-                    <p> - Pruebas en tiempo real de algoritmos relacionados a las tecnologías vistas</p>
+                    <p> - Pruebas en tiempo real de algoritmos </p>
                     <h6>Titulo</h6>
                     <ul class="servicios-tag">
                         <a href="https://drive.google.com/file/d/1a12nrZ1vymGhRdiQH8LkoFyU6CdG6GFs/view?usp=sharing" target="_blank" style="text-decoration:none ;">Ver Titulo</a>
@@ -286,6 +287,8 @@
     <!-- SECCTION C O N T A C T O -->
     <section class="about" id="contacto">
         <h3 class="titulo-seccion">Contactame ahora</h3>
+        <h4 >Si quieres ponerte en contacto conmigo, hablar conmigo sobre una colaboración en un proyecto o simplemente decir hola,
+            escribeme con el formulario que tenes a continuacion </h4>
         <div class="about-flex container">
             <div class="about-info">
                 <form class="form"
@@ -305,6 +308,7 @@
               </form>
             </div>
             <div class="social">
+                <h5 style="color:white ;">Sigueme en mis redes</h5>
                 <a href="https://github.com/nicolascastrocai" target="_blank"><img src="./img/github.svg" alt=""></a>
                 <a href="https://www.linkedin.com/in/nc2000/"target="_blank"><img src="./img/linkedin.svg" alt=""></a>
             </div>
@@ -333,8 +337,8 @@
                         <h2>Proyecto Foro de Video Juegos</h2>
                         <h3>Proyeco Full Stack</h3>
                         <p>
-                           Cree un foro de juegos con Html, css(Sass) y Javascrip del lado del
-                           front end y del lado del back use Node js con expres y Mongo db
+                           Cree un foro de juegos con Html, CSS(Sass) y Javascript del lado del
+                           frontend y del lado del backend use Node.js con Express y Mongodb
                         </p>
                         <p>
                             - Manejo de Passport para el login y el register <br>
@@ -377,9 +381,9 @@
                 <div class="eins-modal-text">
                     <h2>Proyecto Ecommerce</h2>
                     <h3>Proyecto Full Stack</h3>
-                    <p>Cree un ecommerce usando Html, Css y javascrip vanila de la
-                        parte de front end y del lado del back node js con express y
-                        mongo db
+                    <p>Cree un ecommerce usando Html, CSS y Javascript vanila de la
+                        parte de frontend y del lado del backend Node.js con Express y
+                        Mongodb
                     </p>
 
                     <p>
@@ -421,7 +425,7 @@
                     <h2 class="eins-modal-textp1"> Proyect Carta Restaurante.   </h2>
                     <h3>Proyecto FrontEnd</h3>
                     <p>Es un simulacro de proyecto para un Restaurante donde hacemos una carta dinamica online para mostrar al publico</p>
-                    <p> -Uso de  Hipervinculos <br>-Position y  flex para el diseño <br>-Manjeo de GIT</p>
+                    <p> -Uso de  Hipervinculos <br>-Position y  Flex para el diseño <br>-Manjeo de GIT</p>
                     <div class="eins-modal-text-2">
                         <span style="color:white;"></span><a href="https://proyectocartarestauranteempujar.netlify.app"target="_blank" style="text-decoration:none ;">Ir al proyecto</a>
                     </div>
